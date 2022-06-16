@@ -1,0 +1,145 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Generate Sheets from Excel" 
+        Width="500"
+        Height="350"
+        ResizeMode="NoResize" 
+        x:Uid="wind" 
+        x:Name="Windo"
+        
+        Background="#FF403F3D" 
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle HorizontalAlignment="Left" Height="321" Stroke="Black" VerticalAlignment="Top" Width="238" Grid.ColumnSpan="3" Grid.RowSpan="4" Fill="#FFFFD11A" Margin="10,0,0,-0.2" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.236"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.396"/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <!--Left side content-->
+        <Label  Content="Sheets names:"
+                Grid.Row="0"
+                Grid.ColumnSpan="2" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                FontFamily="Arial" 
+                Foreground="Black" 
+                Margin="24,75,66.2,57.8" 
+                Width="157" Grid.RowSpan="2" Height="28" FontSize="13"
+                />
+        <Label  Content="Sheets numbers:"
+                Grid.Row="2"
+                Grid.ColumnSpan="2" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                FontFamily="Arial" 
+                Foreground="Black" 
+                Margin="24,18.2,66.2,31.8" Width="157" Height="30" FontSize="13"
+                />
+        <!--Right side content-->
+        <Image Source="C:\Users\User\Desktop\Logo\xaml.png" 
+               Grid.Row="0"
+               Grid.Column="2"
+               Grid.ColumnSpan="4" 
+               Grid.RowSpan="3"
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Top" 
+               RenderTransformOrigin="0.5,0.5" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Button Grid.Row="3" 
+                Grid.Column="2"
+                Grid.ColumnSpan="2"                
+                FontSize="14" 
+                FontFamily="ISOCPEUR"                
+                Click="bu1_click"
+                ClickMode="Press"            
+                Margin="57.8,0.2,57.6,44.8" 
+                Background="#FF8B8C8A"
+                Content="Ready"
+                Cursor="Hand"/>
+        <Label  Content="First cell"
+            Grid.Row="2" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            FontFamily="Arial" 
+            Foreground="Black" 
+            Margin="30,42.2,15.2,5.8" Width="78" Height="32" FontSize="13"
+                />
+        <Label  Content="Last cell"
+            Grid.Row="2" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            FontFamily="Arial" 
+            Foreground="Black" 
+            Margin="30,74.2,15.2,56.8" 
+            Width="78" Height="29" Grid.RowSpan="2" FontSize="13"
+                />
+        <Label  Content="Last cell"
+            Grid.Row="1" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            FontFamily="Arial" 
+            Foreground="Black" 
+            Margin="30,53,15.2,76.8" 
+            Width="78" Grid.RowSpan="2" Height="31" FontSize="13"
+                />
+        <Label  Content="First cell" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            FontFamily="Arial" 
+            Foreground="Black" 
+            Margin="30,21,25.2,30.8" 
+            Width="68" Grid.Row="1" Height="29" FontSize="13"
+                />
+        <TextBox 
+            x:Name="textbox_shtN"
+            Margin="39.8,39,18.2,19" FontFamily="ISOCPEUR" Grid.Column="1"/>
+        <Label  Content="Excel sheet index № " 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            FontFamily="Arial" 
+            Foreground="Black" 
+            Margin="24,36,89.2,16" 
+            Width="134" Grid.ColumnSpan="2" Height="28" FontSize="13"
+                />
+        <TextBox 
+            x:Name="textbox_shn1"
+            Margin="39.8,24,18.2,34.8" FontFamily="ISOCPEUR" Grid.Row="1" Grid.Column="1"/>
+        <TextBox 
+            x:Name="textbox_shn2"
+            Margin="39.8,59,18.2,79.8" FontFamily="ISOCPEUR" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1"/>
+        <TextBox 
+            x:Name="textbox_shnm1"
+            Margin="39.8,45.2,18.2,12.8" FontFamily="ISOCPEUR" Grid.Row="2" Grid.Column="1"/>
+        <TextBox 
+            x:Name="textbox_shnm2"
+            Margin="39.8,77.2,18.2,60.8" FontFamily="ISOCPEUR" Grid.Row="2" Grid.RowSpan="2" Grid.Column="1"/>
+
+    </Grid>
+
+</Window>
